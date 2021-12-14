@@ -124,8 +124,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.buttonAddArtist);
-            this.flowLayoutPanel1.Controls.Add(this.buttonEditArtist);
             this.flowLayoutPanel1.Controls.Add(this.buttonDeleteArtist);
+            this.flowLayoutPanel1.Controls.Add(this.buttonEditArtist);
             this.flowLayoutPanel1.Controls.Add(this.labelIdArtist);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 299);
@@ -139,9 +139,9 @@
             this.buttonAddArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonAddArtist.Location = new System.Drawing.Point(3, 3);
             this.buttonAddArtist.Name = "buttonAddArtist";
-            this.buttonAddArtist.Size = new System.Drawing.Size(36, 23);
+            this.buttonAddArtist.Size = new System.Drawing.Size(76, 23);
             this.buttonAddArtist.TabIndex = 0;
-            this.buttonAddArtist.Text = "Add";
+            this.buttonAddArtist.Text = "Add an artist";
             this.buttonAddArtist.UseVisualStyleBackColor = true;
             this.buttonAddArtist.Click += new System.EventHandler(this.OnClickAddArtist);
             // 
@@ -149,11 +149,11 @@
             // 
             this.buttonEditArtist.AutoSize = true;
             this.buttonEditArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonEditArtist.Location = new System.Drawing.Point(45, 3);
+            this.buttonEditArtist.Location = new System.Drawing.Point(179, 3);
             this.buttonEditArtist.Name = "buttonEditArtist";
-            this.buttonEditArtist.Size = new System.Drawing.Size(35, 23);
+            this.buttonEditArtist.Size = new System.Drawing.Size(75, 23);
             this.buttonEditArtist.TabIndex = 1;
-            this.buttonEditArtist.Text = "Edit";
+            this.buttonEditArtist.Text = "Edit an artist";
             this.buttonEditArtist.UseVisualStyleBackColor = true;
             this.buttonEditArtist.Click += new System.EventHandler(this.OnClickEditArtist);
             // 
@@ -161,18 +161,18 @@
             // 
             this.buttonDeleteArtist.AutoSize = true;
             this.buttonDeleteArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDeleteArtist.Location = new System.Drawing.Point(86, 3);
+            this.buttonDeleteArtist.Location = new System.Drawing.Point(85, 3);
             this.buttonDeleteArtist.Name = "buttonDeleteArtist";
-            this.buttonDeleteArtist.Size = new System.Drawing.Size(48, 23);
+            this.buttonDeleteArtist.Size = new System.Drawing.Size(88, 23);
             this.buttonDeleteArtist.TabIndex = 2;
-            this.buttonDeleteArtist.Text = "Delete";
+            this.buttonDeleteArtist.Text = "Delete an artist";
             this.buttonDeleteArtist.UseVisualStyleBackColor = true;
             this.buttonDeleteArtist.Click += new System.EventHandler(this.OnClickDeleteArtist);
             // 
             // labelIdArtist
             // 
             this.labelIdArtist.AutoSize = true;
-            this.labelIdArtist.Location = new System.Drawing.Point(140, 0);
+            this.labelIdArtist.Location = new System.Drawing.Point(260, 0);
             this.labelIdArtist.Name = "labelIdArtist";
             this.labelIdArtist.Size = new System.Drawing.Size(13, 13);
             this.labelIdArtist.TabIndex = 3;
@@ -281,9 +281,9 @@
             this.buttonAddVote.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonAddVote.Location = new System.Drawing.Point(3, 3);
             this.buttonAddVote.Name = "buttonAddVote";
-            this.buttonAddVote.Size = new System.Drawing.Size(36, 23);
+            this.buttonAddVote.Size = new System.Drawing.Size(69, 23);
             this.buttonAddVote.TabIndex = 0;
-            this.buttonAddVote.Text = "Add";
+            this.buttonAddVote.Text = "Add a vote";
             this.buttonAddVote.UseVisualStyleBackColor = true;
             this.buttonAddVote.Click += new System.EventHandler(this.OnClickAddVote);
             // 
