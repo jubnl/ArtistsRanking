@@ -217,6 +217,9 @@ namespace ArtistsRanking.Views
             {
                 MessageBox.Show(ex.Message);
             }
+
+            // reset numericUpDownRank value
+            numericUpDownRank.Value = 4;
         }
 
         #endregion
