@@ -4,6 +4,7 @@ namespace ArtistsRanking.Models
 {
     public class Vote : IVote
     {
+        // used for auto increment
         private static readonly object Sync = new();
         private static int _globalCount;
         public int Id { get; set; }
