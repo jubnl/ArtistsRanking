@@ -33,8 +33,7 @@ namespace ArtistsRanking.Models
             Lastname = lastname;
             Rank = rank;
             Artist = artist;
-            ArtistName = artist != null? artist.Name: "";
-            
+            ArtistName = artist != null ? artist.Name : "";
         }
     }
 }

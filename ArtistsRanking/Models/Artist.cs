@@ -10,7 +10,7 @@ namespace ArtistsRanking.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public Style Style { get; set; }
-        
+
         // store average in Artist object
         public decimal? Average { get; set; }
 

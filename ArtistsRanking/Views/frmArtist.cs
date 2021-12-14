@@ -108,7 +108,7 @@ namespace ArtistsRanking.Views
             // empty text box and set the selected artist id to 0
             textBoxArtistName.Text = "";
             labelIdArtist.Text = @"0";
-            
+
             // save the artist
             Enum.TryParse(comboBoxArtistStyle.SelectedItem.ToString(), out Style style);
             try
@@ -200,7 +200,7 @@ namespace ArtistsRanking.Views
             var lname = textBoxLname.Text;
             textBoxFname.Text = "";
             textBoxLname.Text = "";
-            
+
             // check if the fname or the lname is empty
             if (string.IsNullOrEmpty(fname) || string.IsNullOrEmpty(lname))
             {
