@@ -1,4 +1,5 @@
-﻿using ArtistsRanking.Interfaces;
+﻿using System;
+using ArtistsRanking.Interfaces;
 
 namespace ArtistsRanking.Models
 {
@@ -38,7 +39,7 @@ namespace ArtistsRanking.Models
 
             Name = name;
             Style = style;
-            Average = average;
+            Average = average == null ? null : Math.Round((decimal)average, 2);
         }
 
         /// <summary>
