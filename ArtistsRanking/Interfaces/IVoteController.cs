@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
 using ArtistsRanking.Models;
 
 namespace ArtistsRanking.Interfaces

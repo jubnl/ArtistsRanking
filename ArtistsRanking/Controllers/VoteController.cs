@@ -30,6 +30,9 @@ namespace ArtistsRanking.Controllers
 
         #region Constructor
 
+        /// <summary>
+        /// subscribe to the ArtistDeleted event
+        /// </summary>
         public VoteController()
         {
             // subscribe to the artist deleted event
@@ -67,6 +70,7 @@ namespace ArtistsRanking.Controllers
                 Votes.Add(vote);
             }
 
+            // invoke the VoteAdded event
             OnVoteAdded(new VoteAddedEventArgs { Artist = artist, Average = GetAverageByArtist(artist.Id) });
         }
 

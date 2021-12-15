@@ -21,6 +21,9 @@ namespace ArtistsRanking.Controllers
 
         #region private properties
 
+        /// <summary>
+        /// An attempt to sort the binding list, see private void SortBindingList()
+        /// </summary>
         private static readonly List<Artist> Backing = new();
 
         #endregion
@@ -33,6 +36,9 @@ namespace ArtistsRanking.Controllers
 
         #region constructor
 
+        /// <summary>
+        /// subscribe to the VoteAdded event
+        /// </summary>
         public ArtistController()
         {
             VoteController.VoteAdded += VoteAdded;
@@ -81,8 +87,9 @@ namespace ArtistsRanking.Controllers
             {
                 Artists.Add(artist);
             }
-
-            SortBindingList();
+            
+            // doesn't work..
+            // SortBindingList();
         }
 
         /// <summary>
@@ -136,6 +143,9 @@ namespace ArtistsRanking.Controllers
             return Artists.Any(a => a.Name == artist.Name && a.Style == artist.Style);
         }
 
+        /// <summary>
+        /// Sort the binding list
+        /// </summary>
         private void SortBindingList()
         {
             // don't freaking work...
@@ -146,6 +156,11 @@ namespace ArtistsRanking.Controllers
             // Artists.ResetBindings();
         }
 
+        /// <summary>
+        /// If a vote is added, update the concerned artist with the new average
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">VoteAddedEventArgs</param>
         private void VoteAdded(object sender, VoteAddedEventArgs e)
         {
             PSave(e.Artist.Id, e.Artist.Name, e.Artist.Style, e.Average, true);
@@ -155,6 +170,10 @@ namespace ArtistsRanking.Controllers
 
         #region invoke event
 
+        /// <summary>
+        /// Invoke the ArtistDeleted event
+        /// </summary>
+        /// <param name="e">ArtistDeletedEventArgs</param>
         private void OnDeletedArtist(ArtistDeletedEventArgs e) => ArtistDeleted?.Invoke(this, e);
 
         #endregion
