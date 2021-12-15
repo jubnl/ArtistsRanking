@@ -33,8 +33,8 @@
             this.dataGridViewArtist = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonAddArtist = new System.Windows.Forms.Button();
-            this.buttonEditArtist = new System.Windows.Forms.Button();
             this.buttonDeleteArtist = new System.Windows.Forms.Button();
+            this.buttonEditArtist = new System.Windows.Forms.Button();
             this.labelIdArtist = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 450F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 461);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -96,7 +96,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(394, 444);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(486, 455);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // dataGridViewArtist
@@ -110,7 +110,7 @@
             this.dataGridViewArtist.MultiSelect = false;
             this.dataGridViewArtist.Name = "dataGridViewArtist";
             this.dataGridViewArtist.ReadOnly = true;
-            this.dataGridViewArtist.Size = new System.Drawing.Size(388, 142);
+            this.dataGridViewArtist.Size = new System.Drawing.Size(480, 145);
             this.dataGridViewArtist.TabIndex = 0;
             this.dataGridViewArtist.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnClickChangeIndex);
             this.dataGridViewArtist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnClickChangeIndex);
@@ -128,9 +128,9 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonEditArtist);
             this.flowLayoutPanel1.Controls.Add(this.labelIdArtist);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 299);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 305);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(388, 142);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 147);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // buttonAddArtist
@@ -145,29 +145,29 @@
             this.buttonAddArtist.UseVisualStyleBackColor = true;
             this.buttonAddArtist.Click += new System.EventHandler(this.OnClickAddArtist);
             // 
-            // buttonEditArtist
-            // 
-            this.buttonEditArtist.AutoSize = true;
-            this.buttonEditArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonEditArtist.Location = new System.Drawing.Point(85, 3);
-            this.buttonEditArtist.Name = "buttonEditArtist";
-            this.buttonEditArtist.Size = new System.Drawing.Size(75, 23);
-            this.buttonEditArtist.TabIndex = 1;
-            this.buttonEditArtist.Text = "Edit an artist";
-            this.buttonEditArtist.UseVisualStyleBackColor = true;
-            this.buttonEditArtist.Click += new System.EventHandler(this.OnClickEditArtist);
-            // 
             // buttonDeleteArtist
             // 
             this.buttonDeleteArtist.AutoSize = true;
             this.buttonDeleteArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDeleteArtist.Location = new System.Drawing.Point(166, 3);
+            this.buttonDeleteArtist.Location = new System.Drawing.Point(85, 3);
             this.buttonDeleteArtist.Name = "buttonDeleteArtist";
             this.buttonDeleteArtist.Size = new System.Drawing.Size(88, 23);
             this.buttonDeleteArtist.TabIndex = 2;
             this.buttonDeleteArtist.Text = "Delete an artist";
             this.buttonDeleteArtist.UseVisualStyleBackColor = true;
             this.buttonDeleteArtist.Click += new System.EventHandler(this.OnClickDeleteArtist);
+            // 
+            // buttonEditArtist
+            // 
+            this.buttonEditArtist.AutoSize = true;
+            this.buttonEditArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonEditArtist.Location = new System.Drawing.Point(179, 3);
+            this.buttonEditArtist.Name = "buttonEditArtist";
+            this.buttonEditArtist.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditArtist.TabIndex = 1;
+            this.buttonEditArtist.Text = "Edit an artist";
+            this.buttonEditArtist.UseVisualStyleBackColor = true;
+            this.buttonEditArtist.Click += new System.EventHandler(this.OnClickEditArtist);
             // 
             // labelIdArtist
             // 
@@ -190,12 +190,12 @@
             this.tableLayoutPanel4.Controls.Add(this.textBoxArtistName, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.comboBoxArtistStyle, 1, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 151);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 154);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(388, 142);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(480, 145);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // label1
@@ -203,7 +203,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 71);
+            this.label1.Size = new System.Drawing.Size(234, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Artist Name :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -211,9 +211,9 @@
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 71);
+            this.label2.Location = new System.Drawing.Point(3, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 71);
+            this.label2.Size = new System.Drawing.Size(234, 73);
             this.label2.TabIndex = 1;
             this.label2.Text = "Artist Style :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -221,7 +221,7 @@
             // textBoxArtistName
             // 
             this.textBoxArtistName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBoxArtistName.Location = new System.Drawing.Point(197, 25);
+            this.textBoxArtistName.Location = new System.Drawing.Point(243, 26);
             this.textBoxArtistName.Name = "textBoxArtistName";
             this.textBoxArtistName.Size = new System.Drawing.Size(188, 20);
             this.textBoxArtistName.TabIndex = 2;
@@ -230,7 +230,7 @@
             // 
             this.comboBoxArtistStyle.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxArtistStyle.FormattingEnabled = true;
-            this.comboBoxArtistStyle.Location = new System.Drawing.Point(197, 96);
+            this.comboBoxArtistStyle.Location = new System.Drawing.Point(243, 98);
             this.comboBoxArtistStyle.Name = "comboBoxArtistStyle";
             this.comboBoxArtistStyle.Size = new System.Drawing.Size(188, 21);
             this.comboBoxArtistStyle.TabIndex = 3;
@@ -243,13 +243,13 @@
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel2, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(403, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(495, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(394, 444);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(486, 455);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // dataGridViewVote
@@ -263,16 +263,16 @@
             this.dataGridViewVote.MultiSelect = false;
             this.dataGridViewVote.Name = "dataGridViewVote";
             this.dataGridViewVote.ReadOnly = true;
-            this.dataGridViewVote.Size = new System.Drawing.Size(388, 142);
+            this.dataGridViewVote.Size = new System.Drawing.Size(480, 145);
             this.dataGridViewVote.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.buttonAddVote);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 299);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 305);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(388, 142);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(480, 147);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // buttonAddVote
@@ -301,21 +301,21 @@
             this.tableLayoutPanel5.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 151);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 154);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(388, 142);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(480, 145);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // comboBoxVoteArtist
             // 
             this.comboBoxVoteArtist.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBoxVoteArtist.FormattingEnabled = true;
-            this.comboBoxVoteArtist.Location = new System.Drawing.Point(197, 113);
+            this.comboBoxVoteArtist.Location = new System.Drawing.Point(243, 116);
             this.comboBoxVoteArtist.Name = "comboBoxVoteArtist";
             this.comboBoxVoteArtist.Size = new System.Drawing.Size(188, 21);
             this.comboBoxVoteArtist.TabIndex = 0;
@@ -323,7 +323,7 @@
             // numericUpDownRank
             // 
             this.numericUpDownRank.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numericUpDownRank.Location = new System.Drawing.Point(197, 77);
+            this.numericUpDownRank.Location = new System.Drawing.Point(243, 80);
             this.numericUpDownRank.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
             this.numericUpDownRank.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             this.numericUpDownRank.Name = "numericUpDownRank";
@@ -334,7 +334,7 @@
             // textBoxLname
             // 
             this.textBoxLname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBoxLname.Location = new System.Drawing.Point(197, 42);
+            this.textBoxLname.Location = new System.Drawing.Point(243, 44);
             this.textBoxLname.Name = "textBoxLname";
             this.textBoxLname.Size = new System.Drawing.Size(188, 20);
             this.textBoxLname.TabIndex = 2;
@@ -342,7 +342,7 @@
             // textBoxFname
             // 
             this.textBoxFname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBoxFname.Location = new System.Drawing.Point(197, 7);
+            this.textBoxFname.Location = new System.Drawing.Point(243, 8);
             this.textBoxFname.Name = "textBoxFname";
             this.textBoxFname.Size = new System.Drawing.Size(188, 20);
             this.textBoxFname.TabIndex = 3;
@@ -352,7 +352,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 35);
+            this.label3.Size = new System.Drawing.Size(234, 36);
             this.label3.TabIndex = 4;
             this.label3.Text = "First name :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -360,9 +360,9 @@
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 35);
+            this.label4.Location = new System.Drawing.Point(3, 36);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 35);
+            this.label4.Size = new System.Drawing.Size(234, 36);
             this.label4.TabIndex = 5;
             this.label4.Text = "Last name :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -370,9 +370,9 @@
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 70);
+            this.label5.Location = new System.Drawing.Point(3, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 35);
+            this.label5.Size = new System.Drawing.Size(234, 36);
             this.label5.TabIndex = 6;
             this.label5.Text = "Rank :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -380,9 +380,9 @@
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 105);
+            this.label6.Location = new System.Drawing.Point(3, 108);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 37);
+            this.label6.Size = new System.Drawing.Size(234, 37);
             this.label6.TabIndex = 7;
             this.label6.Text = "Artist :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -391,7 +391,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(984, 461);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmArtist";
             this.Text = "frmArtist";
