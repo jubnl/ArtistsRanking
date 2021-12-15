@@ -149,7 +149,7 @@
             // 
             this.buttonDeleteArtist.AutoSize = true;
             this.buttonDeleteArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDeleteArtist.Location = new System.Drawing.Point(85, 3);
+            this.buttonDeleteArtist.Location = new System.Drawing.Point(166, 3);
             this.buttonDeleteArtist.Name = "buttonDeleteArtist";
             this.buttonDeleteArtist.Size = new System.Drawing.Size(88, 23);
             this.buttonDeleteArtist.TabIndex = 2;
@@ -161,7 +161,7 @@
             // 
             this.buttonEditArtist.AutoSize = true;
             this.buttonEditArtist.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonEditArtist.Location = new System.Drawing.Point(179, 3);
+            this.buttonEditArtist.Location = new System.Drawing.Point(85, 3);
             this.buttonEditArtist.Name = "buttonEditArtist";
             this.buttonEditArtist.Size = new System.Drawing.Size(75, 23);
             this.buttonEditArtist.TabIndex = 1;
