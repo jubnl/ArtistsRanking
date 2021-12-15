@@ -4,6 +4,8 @@ namespace ArtistsRanking.Models
 {
     public class Vote : IVote
     {
+        #region properties
+
         // used for auto increment
         private static readonly object Sync = new();
         private static int _globalCount;
@@ -12,7 +14,13 @@ namespace ArtistsRanking.Models
         public string Lastname { get; set; }
         public int Rank { get; set; }
         public Artist Artist { get; set; }
+
+        // public needed because it is displayed in the view
         public string ArtistName { get; set; }
+
+        #endregion
+
+        #region constructor
 
         public Vote(int id, string firstname, string lastname, int rank, Artist artist)
         {
@@ -35,5 +43,7 @@ namespace ArtistsRanking.Models
             Artist = artist;
             ArtistName = artist != null ? artist.Name : "";
         }
+
+        #endregion
     }
 }

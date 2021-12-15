@@ -5,6 +5,8 @@ namespace ArtistsRanking.Models
 {
     public class Artist : IArtist
     {
+        #region properties
+
         // used for the autoincrement
         private static readonly object Sync = new();
         private static int _globalCount;
@@ -14,6 +16,10 @@ namespace ArtistsRanking.Models
 
         // store average in Artist object
         public decimal? Average { get; set; }
+
+        #endregion
+
+        #region constructors
 
         /// <summary>
         /// Artist instance that is really used
@@ -67,5 +73,7 @@ namespace ArtistsRanking.Models
             Style = style;
             Average = 0;
         }
+
+        #endregion
     }
 }
