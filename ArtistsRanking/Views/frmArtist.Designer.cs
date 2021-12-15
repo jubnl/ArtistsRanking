@@ -124,8 +124,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.buttonAddArtist);
-            this.flowLayoutPanel1.Controls.Add(this.buttonDeleteArtist);
             this.flowLayoutPanel1.Controls.Add(this.buttonEditArtist);
+            this.flowLayoutPanel1.Controls.Add(this.buttonDeleteArtist);
             this.flowLayoutPanel1.Controls.Add(this.labelIdArtist);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 305);
