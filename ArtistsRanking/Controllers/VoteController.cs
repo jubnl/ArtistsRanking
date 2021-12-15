@@ -8,7 +8,7 @@ using ArtistsRanking.Models;
 
 namespace ArtistsRanking.Controllers
 {
-    public sealed class VoteController : IVoteController
+    public class VoteController : IVoteController
     {
         #region public properties
 
