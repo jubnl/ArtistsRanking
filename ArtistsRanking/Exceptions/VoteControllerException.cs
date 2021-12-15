@@ -1,33 +1,34 @@
 ﻿using System;
 
-namespace ArtistsRanking.Exceptions;
-
-public class VoteControllerException : Exception
+namespace ArtistsRanking.Exceptions
 {
-    protected VoteControllerException()
+    public class VoteControllerException : Exception
     {
+        protected VoteControllerException()
+        {
+        }
+
+        protected VoteControllerException(string message) : base(message)
+        {
+        }
+
+        protected VoteControllerException(string message, Exception inner) : base(message, inner)
+        {
+        }
     }
 
-    protected VoteControllerException(string message) : base(message)
+    public class VoteAlreadyExistsException : VoteControllerException
     {
-    }
+        public VoteAlreadyExistsException()
+        {
+        }
 
-    protected VoteControllerException(string message, Exception inner) : base(message, inner)
-    {
-    }
-}
+        public VoteAlreadyExistsException(string message) : base(message)
+        {
+        }
 
-public class VoteAlreadyExistsException : VoteControllerException
-{
-    public VoteAlreadyExistsException()
-    {
-    }
-
-    public VoteAlreadyExistsException(string message) : base(message)
-    {
-    }
-
-    public VoteAlreadyExistsException(string message, Exception inner) : base(message, inner)
-    {
+        public VoteAlreadyExistsException(string message, Exception inner) : base(message, inner)
+        {
+        }
     }
 }
