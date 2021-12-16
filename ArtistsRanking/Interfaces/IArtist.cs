@@ -5,8 +5,8 @@ namespace ArtistsRanking.Interfaces
     public interface IArtist
     {
         int Id { get; set; }
-        string Name { get; set; }
-        Style Style { get; set; }
+        string Name { get; }
+        Style Style { get; }
         decimal? Average { get; set; }
     }
 }

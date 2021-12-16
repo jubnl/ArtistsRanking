@@ -5,9 +5,9 @@ namespace ArtistsRanking.Interfaces
     public interface IVote
     {
         int Id { get; set; }
-        string Firstname { get; set; }
-        string Lastname { get; set; }
+        string Firstname { get; }
+        string Lastname { get; }
         int Rank { get; set; }
-        Artist Artist { get; set; }
+        Artist Artist { get; }
     }
 }

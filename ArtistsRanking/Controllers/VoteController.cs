@@ -15,7 +15,7 @@ namespace ArtistsRanking.Controllers
         /// <summary>
         /// Binding list that contains all votes
         /// </summary>
-        public BindingList<Vote> Votes { get; set; } = new();
+        public readonly BindingList<Vote> Votes = new();
 
         #endregion
 

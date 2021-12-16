@@ -10,13 +10,13 @@ namespace ArtistsRanking.Models
         private static readonly object Sync = new();
         private static int _globalCount;
         public int Id { get; set; }
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
+        public string Firstname { get; }
+        public string Lastname { get; }
         public int Rank { get; set; }
-        public Artist Artist { get; set; }
+        public Artist Artist { get; }
 
         // public needed because it is displayed in the view
-        public string ArtistName { get; set; }
+        public string ArtistName { get; }
 
         #endregion
 

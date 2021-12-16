@@ -72,22 +72,12 @@ namespace ArtistsRanking.Views
         /// <param name="e"></param>
         private void OnClickChangeIndex(object sender, EventArgs e)
         {
-            Artist artist;
-
-            // prevent error when clicked on the header row
-            try
-            {
-                artist = (Artist)dataGridViewArtist.CurrentRow.DataBoundItem;
-            }
-            catch (NullReferenceException)
-            {
-                return;
-            }
+            var artist = (Artist)dataGridViewArtist.CurrentRow?.DataBoundItem;
 
             // fill fields from the selected artist
-            labelIdArtist.Text = artist.Id.ToString();
-            textBoxArtistName.Text = artist.Name;
-            comboBoxArtistStyle.SelectedItem = artist.Style;
+            labelIdArtist.Text = artist?.Id.ToString();
+            textBoxArtistName.Text = artist?.Name;
+            comboBoxArtistStyle.SelectedItem = artist?.Style;
         }
 
         /// <summary>

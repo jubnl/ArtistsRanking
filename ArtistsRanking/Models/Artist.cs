@@ -11,8 +11,8 @@ namespace ArtistsRanking.Models
         private static readonly object Sync = new();
         private static int _globalCount;
         public int Id { get; set; }
-        public string Name { get; set; }
-        public Style Style { get; set; }
+        public string Name { get; }
+        public Style Style { get; }
 
         // store average in Artist object
         public decimal? Average { get; set; }
