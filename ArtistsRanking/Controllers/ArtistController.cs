@@ -8,7 +8,7 @@ using ArtistsRanking.Exceptions;
 
 namespace ArtistsRanking.Controllers
 {
-    public sealed class ArtistController : IArtistController
+    public class ArtistController : IArtistController
     {
         #region public properties
 
